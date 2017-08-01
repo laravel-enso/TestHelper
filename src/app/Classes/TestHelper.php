@@ -8,7 +8,6 @@ use Tests\TestCase;
 
 class TestHelper extends TestCase
 {
-
     protected function disableExceptionHandling()
     {
         $this->app->instance(ExceptionHandler::class, new class() extends Handler {
