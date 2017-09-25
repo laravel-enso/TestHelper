@@ -4,8 +4,8 @@ namespace LaravelEnso\TestHelper\app\Classes\Traits;
 
 trait TestDataTable
 {
-	/** @test */
-	public function dataTableIndex()
+    /** @test */
+    public function dataTableIndex()
     {
         $init = $this->get(route($this->prefix.'.initTable', [], false));
 
