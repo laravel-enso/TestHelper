@@ -10,6 +10,13 @@
 
 Test helper dependency for [Laravel Enso](https://github.com/laravel-enso/Enso).
 
+### Details
+- is a collection of traits used for facilitating the testing of a few common Laravel Enso components
+- SignIn, handles the sign-in stage
+- TestCreateForm, handles testing of back-end form object creation for a route
+- TestDataTable, handles testing of the back-end datatable object creation for a route 
+
+
 <!--h-->
 ### Contributions
 
