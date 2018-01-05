@@ -10,13 +10,13 @@ trait TestDataTable
         $init = $this->get(route($this->prefix.'.initTable', [], false));
 
         $init->assertStatus(200)
-            ->assertJsonStructure(['header', 'columns']);
+            ->assertJsonStructure(['template']);
 
         $params = (array) json_decode($init->getContent())
-            + ['start' => 1, 'length' => 10, 'draw' => 1];
+            + ['meta' => '{"start":0,"length":10,"sort":false,"total":false,"enum":false,"date":false}'];
 
         $this->get(route($this->prefix.'.getTableData', $params, false))
             ->assertStatus(200)
-            ->assertJsonStructure(['data', 'draw']);
+            ->assertJsonStructure(['data']);
     }
 }
