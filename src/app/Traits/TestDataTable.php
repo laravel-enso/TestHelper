@@ -14,7 +14,7 @@ trait TestDataTable
 
         $params = (array) json_decode($init->getContent()) + [
             'columns' => '{}',
-            'meta' => '{"start":0,"length":10,"sort":false,"total":false,"enum":false,"date":false,"actions":true,"forceInfo":false}'
+            'meta' => '{"start":0,"length":10,"sort":false,"total":false,"enum":false,"date":false,"actions":true,"forceInfo":false}',
         ];
 
         $this->get(route($this->prefix.'.getTableData', $params, false))
