@@ -12,8 +12,10 @@ trait TestDataTable
         $init->assertStatus(200)
             ->assertJsonStructure(['template']);
 
-        $params = (array) json_decode($init->getContent())
-            + ['meta' => '{"start":0,"length":10,"sort":false,"total":false,"enum":false,"date":false}'];
+        $params = (array) json_decode($init->getContent()) + [
+            'columns' => '{}',
+            'meta' => '{"start":0,"length":10,"sort":false,"total":false,"enum":false,"date":false,"actions":true,"forceInfo":false}'
+        ];
 
         $this->get(route($this->prefix.'.getTableData', $params, false))
             ->assertStatus(200)
