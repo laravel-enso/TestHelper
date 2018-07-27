@@ -1,4 +1,3 @@
-<!--h-->
 # TestHelper
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7b030436cab14721b8bab70c2d963e49)](https://www.codacy.com/app/laravel-enso/TestHelper?utm_source=github.com&utm_medium=referral&utm_content=laravel-enso/TestHelper&utm_campaign=badger)
@@ -6,7 +5,6 @@
 [![License](https://poser.pugx.org/laravel-enso/testhelper/license)](https://packagist.org/packages/laravel-enso/testhelper)
 [![Total Downloads](https://poser.pugx.org/laravel-enso/testhelper/downloads)](https://packagist.org/packages/laravel-enso/testhelper)
 [![Latest Stable Version](https://poser.pugx.org/laravel-enso/testhelper/version)](https://packagist.org/packages/laravel-enso/testhelper)
-<!--/h-->
 
 Test helper dependency for [Laravel Enso](https://github.com/laravel-enso/Enso).
 
@@ -17,7 +15,6 @@ Test helper dependency for [Laravel Enso](https://github.com/laravel-enso/Enso).
 - TestDataTable, handles testing of the back-end datatable object creation for a route 
 
 
-<!--h-->
 ### Contributions
 
 are welcome. Pull requests are great, but issues are good too.
@@ -25,4 +22,3 @@ are welcome. Pull requests are great, but issues are good too.
 ### License
 
 This package is released under the MIT license.
-<!--/h-->
