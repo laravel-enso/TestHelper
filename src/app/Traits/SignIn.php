@@ -6,6 +6,7 @@ trait SignIn
 {
     protected function signIn($user = null)
     {
+        set_time_limit(60);
         $user = $user ?? factory('App\User')->create();
         $user->role_id = intval($user->role_id);
         $this->actingAs($user);
